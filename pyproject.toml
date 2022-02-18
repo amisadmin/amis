@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "amis"
+authors = [
+    { name = "Atomi", email = "1456417373@qq.com" },
+]
+maintainers = [
+    { name = "Atomi", email = "1456417373@qq.com" },
+]
+description = "amis是Baidu团队开发的一个低代码前端框架，它使用JSON配置来生成页面，可以减少页面开发工作量，极大提升效率。python amis基于baidu amis,对amis数据结构通过pydantic转换为对应的python数据模型,并添加部分常用方法."
+readme = "README.md"
+requires-python = ">=3.6.1"
+dynamic = ["version"]
+keywords = [
+    "amis",
+    "fastapi-amis-admin",
+]
+classifiers = [
+    "Framework :: FastAPI",
+    "Environment :: Web Environment",
+    "Topic :: System :: Systems Administration",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "ujson>=4.0.1",
+    "pydantic>=1.6.2",
+]
+
+
+[project.urls]
+Documentation = "https://docs.gh.amis.work/amis/types/"
+Source = "https://github.com/amisadmin/fastapi_amis_admin"
+FastAPI-Amis-Admin = "https://github.com/amisadmin/fastapi_amis_admin"
+
+[project.optional-dependencies]
+test = [
+    "pytest >=6.2.4,<7.0.0",
+]
